@@ -25,5 +25,6 @@
     전달받은 date_time_local은 <?php echo $_POST['datetime-local']; ?> 입니다.<br>
     전달받은 select는 <?php echo $_POST['select']; ?> 입니다.<br>
     전달받은 optgroup는 <?php echo $_POST['optgroup']; ?> 입니다.
+    전달받은 data는 <?php echo $_POST['data']; ?> 입니다.<br>
     </body>
 </html>

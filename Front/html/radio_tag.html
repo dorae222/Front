@@ -5,9 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>radio and color_tag</title>
+    <style>
+        .subm{ /* 버튼 스타일 */
+        display:block; /* 블록 레벨 요소 */
+        background-color:#fff; /* 배경색 */
+        border:1px solid #dedede; /* 테두리 */
+        cursor:pointer; /* 마우스 포인터 */
+        padding:5px 10px 6px 7px;/* 패딩 */
+        }
+        .subm img{ /* 버튼 내 왼쪽 이미지 */
+        border:0; /* 테두리 없음*/
+        padding:0; /* 패딩 없음 */
+        width:16px; /* 가로 크기 */
+        height:16px; /* 세로 크기 */
+        }
+        .subm:hover{ /* 버튼 위로 마우스 포인터 올렸을 때 스타일 */
+        background-color:#e6efc2; /* 배경색 */
+        border:1px solid #c6d880; /* 테두리 */
+        color:#529215; /* 글자색 */
+        }
+        </style>
+            
 </head>
 <body>
-    <fieldset action ="../php/server2.php" method="post">
+    <form action ="../php/server2.php" method="post">
         <fieldset>
         <legend>기본 정보 선택</legend>
         <input type="hidden" name="hidden" value="숨겨진 값">
@@ -117,13 +138,72 @@
                 </select>                
         </fieldset>
 
+        <fieldset>
+            <legend>dataset</legend>
+            <input type="text" id="interest" list="choices" name="data">
+            <datalist id="choices">
+                <option value="grammar" label="문법"></option>
+                <option value="voca" label="어휘"></option>
+                <option value="speaking" label="회화"></option>
+                <option value="listening" label="리스닝"></option>
+                <option value="news" label="뉴스청취"></option>
+            </datalist>
+        </fieldset>
         <hr>
-
+        <fieldset>
         <input type="submit" value="전송하기"><br>
         <input type="reset" value="전체삭제"><br>
-        <input type="image" src="../pictures/send.png"><br>
-        <button type="submit" value="버튼 태그 전송하기">버튼 태그 전송하기</button>
-                   
-        </form>    
+        <button type="submit" class="subm">
+            <img src="../pictures/send.png" alt="error"> 전송하기
+        </button>
+        </fieldset>
+    </form>
+
+        <hr><br>
+
+        <label>output 태그 활용</label>
+        <form oninput="result.value=parseInt(num1.value)*parseInt(num2.value)">
+            <fieldset>
+            <input type="number" name="num1" value="10">
+            *<input type="number" name="num2" value="20">
+            =<output name="result" for="num"></output>
+            </fieldset>
+
+        <hr>
+
+        <fieldset>
+            <legend>meter</legend>
+            <label>점유율 0.8 </label>
+            <meter value="0.8"></meter>
+            <label>사용량 64%</label>
+            <meter min="0" max="100" value="64"></meter>
+            <label>트래픽 초과</label>
+            <meter min="1024" max="10240" low="2048" high="8192"
+            value="9216"></meter>
+            <label>적절한 트래픽</label>
+            <meter value="0.5" optimum="0.8"></meter>
+        </fieldset>
+        
+        <fieldset>
+        <label>트래픽 테스트 : 4000일 때</label>
+        <meter min="1024" max="10240" low="2048" high="8192" value="4000"></meter>
+        <br>
+
+        <label>트래픽 테스트 : 9000일 때</label>
+        <meter min="1024" max="10240" low="2048" high="8192" value="9000"></meter>
+        <br>
+        </fieldset>
+
+        <br>
+
+    <label>동적 사용량</label>
+    <progress max="100" value="20" id="pro_bar"></progress>
+    <button onclick="jbFunc()">Click</button> <br>
+    <script>
+        function jbFunc() {
+            document.getElementById('pro_bar').value = '80';
+        }
+    </script>
+    </form>
 </body>
 </html>
