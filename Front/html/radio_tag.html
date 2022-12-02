@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio and color_tag</title>
+</head>
+<body>
+    <fieldset action ="../php/server2.php" method="post">
+        <fieldset>
+        <legend>기본 정보 선택</legend>
+        <input type="hidden" name="hidden" value="숨겨진 값">
+
+        <label for="user_id">아이디</label>
+        <input type="text" id="user_id" name="text" value="id1" autofocus><br>
+
+        <label for="password_id">비밀번호</label>
+        <input type="password" id="password_id" name="password" value="pw1"
+        required><br>
+
+        <label for="text_id">텍스트</label>
+        <input type="text" id="text_id" name="text_2" size="20" maxlength="10" value="텍스트 기본"
+        placeholder="텍스트를 입력하는 곳이에요"><br>
+
+        <label for="search_id">검색창</label>
+        <input type="text" id="text_id" name="search" size="20" maxlength="10" value="검색창 기본값"><br>
+        
+        <label for="url_id">URL주소</label>
+        <input type="url" id="url_id" name="url" value="https://www.naver.com" readonly><br>
+
+        <label for="email_id">이메일</label>
+        <input type="email" id="email_id" name="email" value="dhj9842@gmail.com"><br>
+
+        <label for="tel_id">전화번호</label>
+        <input type="tel" id="tel_id" name="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" value="010-5746-3284"><br>
+
+        <label for="number_id">숫자</label>
+        <input type="number" id="number_id" name="number" min="10" max="50" step="5" value="35"><br>
+
+        <label for="range_id">범위</label>
+        <input type="range" id="range_id" name="range" min="30" max="100" step="10" value="50"><br>
+        </fieldset>
+        <hr>
+
+        <fieldset>
+            <legend>멤버 한명 선택</legend>
+            <label><input type="radio" name="radio" value="미연">미연</label>
+            <label><input type="radio" name="radio" value="민니">민니</label>
+            <label><input type="radio" name="radio" value="슈화">슈화</label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>멤버 다수 선택</legend>
+            <label><input type="checkbox" name="checkbox[]" value="미연">미연</label>
+            <label><input type="checkbox" name="checkbox[]" value="민니">민니</label>
+            <label><input type="checkbox" name="checkbox[]" value="슈화">슈화</label>
+            <label><input type="checkbox" name="checkbox[]" value="슈화">우기</label>
+            <label><input type="checkbox" name="checkbox[]" value="슈화">소연</label>
+        </fieldset><br>
+
+        <hr>
+        <fieldset>
+        <legend>색상 선택</legend>
+        <label for = 'color_id'>색상</label>
+        <input type="color" id="color_id" name="color" value="black">
+        </fieldset>
+        <hr>
+
+        <fieldset>
+            <legend>날짜 선택</legend>
+            <label for = 'date_id'>날짜</label>
+            <input type="date" id="date_id" name="date" value="2022-12-02"
+            min="10"max="100" step="10"><br>
+            <label for = 'month_id'>월</label>
+            <input type="month" id="month_id" name="month" value="2022-12"><br>
+            <label for = 'week_id'>주</label>
+            <input type="week" id="week_id" name="week" value="2022-W48"><br>
+            <label for = 'time_id'>시간</label>
+            <input type="time" id="time_id" name="time" value="09:00"><br>
+            <label for = 'datetime_id'>date_time_local</label>
+            <input type="datetime-local" id="datetime_id" name="datetime-local" value="2022-12-02T09:00"><br>
+        </fieldset>
+
+        <hr>
+
+        <fieldset>
+            <legend>단순 학과 선택</legend>
+            <select id="class" name="select">
+                <option value="archi">건축공학과</option>
+                <option value="mechanic">기계공학과</option>
+                <option value="indust">산업공학과</option>
+                <option value="elec">전기전자공학과</option>
+                <option value="computer" selected>컴퓨터공학과</option>
+                <option value="chemical">화학공학과</option>
+                </select>
+        </fieldset>
+
+        <hr>
+
+        <fieldset>
+            <legend>단과대별 학과 선택</legend>
+            <select id="class_2" name="optgroup">
+                <optgroup label="공과대학">
+                <option value="archi">건축공학과</option>
+                <option value="mechanic">기계공학과</option>
+                <option value="indust">산업공학과</option>
+                <option value="elec">전기전자공학과</option>
+                <option value="computer">컴퓨터공학과</option>
+                <option value="chemical">화학공학과</option>
+                </optgroup>
+                <optgroup label="인문대학">
+                <option value="history">사학과</option>
+                <option value="lang">어문학부</option>
+                <option value="philo">철학</option>
+                </optgroup>
+                </select>                
+        </fieldset>
+
+        <hr>
+
+        <input type="submit" value="전송하기"><br>
+        <input type="reset" value="전체삭제"><br>
+        <input type="image" src="../pictures/send.png"><br>
+        <button type="submit" value="버튼 태그 전송하기">버튼 태그 전송하기</button>
+                   
+        </form>    
+</body>
+</html>
