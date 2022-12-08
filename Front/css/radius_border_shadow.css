@@ -1,0 +1,12 @@
+.box1{
+    width:200px; /* 고정 너비 */
+    height:100px;
+    background:skyblue;
+    border-radius:50px;
+    border-top-left-radius: 100px 50px;
+    box-shadow: 50px 10px 5px 10px gray;
+}
+
+div {
+    margin:10px; /* div 간의 여백 */
+}

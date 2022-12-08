@@ -1,0 +1,11 @@
+p{
+    margin-left: 20px;
+    font-style: italic;
+    font-size: 15px;
+    color: red !important;
+}
+/* !important 사용시 덮어쓰기 불가(default처럼 설정) */
+p{
+    font-size: 50px;
+    color: blue;
+}

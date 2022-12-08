@@ -1,0 +1,8 @@
+.content{
+    color:red;
+}
+/* a와 button tag는 상속이 안 됐음. */
+/* 아래 코드와 위의 태그 비교해보기 */
+.content a, button{
+    color:inherit;
+}

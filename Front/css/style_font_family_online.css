@@ -1,0 +1,10 @@
+/* body{
+    font font-family: "맑은 잉ㄹ","궁섬ㄴㅇㄹ","궁서";
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+#font_text{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 35px;
+}

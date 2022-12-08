@@ -1,0 +1,3 @@
+.box1 { border-style:solid; } /* 실선 */
+.box2 { border-style:dotted; } /* 점선 */
+.box3 { border-style:dashed; } /* 선으로 된 점선 */

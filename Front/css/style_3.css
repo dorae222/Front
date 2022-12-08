@@ -1,0 +1,11 @@
+.text_1 {
+    margin-left: 20px;
+    font-style: italic;
+    font-size: 15px;
+    color: red;
+}
+
+#text_2 {
+    font-size: 50px;
+    color: blue;
+}

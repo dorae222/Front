@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list_style_position</title>
+    <style>
+        .inside{
+            list-style-position: inside;
+        }
+
+        ul {
+            list-style-image:url('../pictures/dot.png'); /* 불릿으로 사용할 이미지 */
+        }
+    </style>       
+</head>
+<body>
+    <h3>line-style-position을 지정하지 않음</h3>
+    <li>Do it! 시리즈</li>
+    <li>된다 시리즈</li>
+    <li>DCM 프로 사진가</li>
+    <li>데이터과학 시리즈</li>
+
+    <h3 >line-style-position:inside</h3>
+    <ul class="insie">
+        <li>Do it! 시리즈</li>
+        <li>된다 시리즈</li>
+        <li>DCM 프로 사진가</li>
+        <li>데이터과학 시리즈</li>
+    </ul>
+</body>
+</html>

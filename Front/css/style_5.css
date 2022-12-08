@@ -1,0 +1,5 @@
+.box:activate {
+    transform:rotate(15deg);
+    font-size: 30px;
+    color: red;
+}

@@ -1,0 +1,12 @@
+#test >div>p{
+    color: red;
+    font-size: 35px;
+}
+
+/* 위아래 비교해보기 */
+/* 하위 태그를 선택해서 상속을 할 때 꺽쇠(>)를 통해 선택 */
+
+/* #test p{
+    color: red;
+    font-size: 35px;
+} */

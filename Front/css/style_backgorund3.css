@@ -1,0 +1,58 @@
+.grad1{
+    /* 방향 */
+    background: linear-gradient(to right bottom, blue, red);
+}
+
+.grad2{
+    /* 각도 조정 */
+    background: linear-gradient(25deg, #ff0000, #ffffff);
+}
+
+.grad3{
+    /* 색상 중지점 */
+    background: linear-gradient(to bottom, #06f, white 30%, #06f);
+}
+
+/* 원형 그라데이션 */
+/* 1. 모양 */
+.grad4{
+    /* 모양 지정시 */
+    background:radial-gradient(white, yellow, red);
+}
+.grad5{
+    /* 모양 미지정시 */
+    background:radial-gradient(circle,white, yellow, red);
+}
+/* 2. 위치 */
+.grad6{
+    background: radial-gradient(circle at 10% 10%,white,blue);
+}
+/* 3. 크기 */
+.grad7{
+    background: radial-gradient( closest-side at 30% 20%,white,yellow, green);
+}
+.grad8{
+    background: radial-gradient(closest-corner at 30% 20%,white,yellow, green);
+}
+.grad9{
+    background: radial-gradient(farthest-side at 30% 20%,white,yellow, green);
+}
+.grad10{
+    background: radial-gradient(farthest-corner at 30% 20%,white,yellow, green);
+}
+/* 4. 색상 중지점*/
+.grad11{
+    background:radial-gradient(red, yellow,skyblue);
+}
+.grad12{
+    background:radial-gradient(red, yellow 20%, skyblue);
+}
+.grad13{
+    background: repeating-linear-gradient(skyblue, skyblue 20px, white 20px, red 40px);
+}
+
+div{
+    width: 300px;
+    height: 200px;
+    display:inline-block;
+}

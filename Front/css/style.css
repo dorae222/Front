@@ -1,0 +1,23 @@
+ul {
+    color:blue; /* 목록의 글자색 */
+    list-style-type: square; /* 불릿 형태 : 사각형 */
+    font-size: 30px;
+}
+
+h2.bluetext {
+    color:blue; /* 글자색 */
+}
+.redtext {
+    color: red; /* 글자색 */
+}
+p{
+    font: size 20px; /* 글자 크기 */
+    margin-left:20px; /* 왼쪽 마진 여백 */
+}
+
+#container {
+    background: #ff6a00; /* 배경색 */
+    width:400px; /* 너비 */
+    height:200px; /* 높이 */
+    margin:0 auto; /* 가로로 중앙에 배치 */
+}

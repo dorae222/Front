@@ -1,0 +1,10 @@
+#font_text{
+    font-family: '궁서';
+    font-size: 35px;
+}
+
+@font-face {
+    font-family: 'nanum';
+    src: local(NanumGothic-Regular),
+    url(../font/NANUMGOTHIC-REGULAR.TTF)
+}
