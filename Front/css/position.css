@@ -1,0 +1,71 @@
+/* div{
+    border: 1px black solid;
+} */
+
+/* 1. static */
+/* .box1{
+    float:left;
+    width:100px;
+    top:300px;
+    background:#ffd800;
+    margin-right:10px;
+    padding:20px;
+    }
+.box2 {
+    width:300px;
+    background:#0094ff;
+    float:left;
+    padding:20px;
+} */
+
+/* 2. relative */
+
+/* .box1{
+    float:left;
+    width:100px;
+    background:#ffd800;
+    margin-right:10px;
+    padding:20px;
+    }
+.box2 {
+    position:relative;
+    left:-50px;
+    top:30px;
+    width:300px;
+    background:#0094ff;
+    float:left;
+    padding:20px;
+} */
+
+/* 3. absolute */
+
+/* #wrap{
+    position:relative;
+    width: 500px;
+    height:500px;
+    border:2px solid orange;
+}
+.box{
+    position:absolute;
+    width:100px;
+    height:100px;
+    background:#0094ff;
+    text-align: center;
+    display: flex;
+}
+#crd1 { top:0; left:0; }
+#crd2 { top:0; right:0; }
+#crd3 { bottom:0; left:0; }
+#crd4 { bottom:0; right:0; }
+#crd5 { top:200px; left:200px; } */
+
+/* 4. fixed */
+#fx{
+    position:fixed;
+    top:5px;
+    right:5px;
+    width:50px;
+    height:50px;
+    background:#ff6a00;
+}
+    

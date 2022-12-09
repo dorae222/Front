@@ -1,0 +1,23 @@
+/* border-spacing */
+/* .table1 {
+    border:3px solid black;
+    border-collapse:separate;
+    border-spacing:20px 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.table1 td {
+    border:1px dotted black;
+} */
+
+/* empty-cell */
+.schedule {
+    border:3px solid black;
+    border-collapse:separate;
+    border-spacing:20px 10px;
+    padding: 10px;
+    margin-top: 20px
+}
+td { border:1px solid black; }
+#tb1 td{ empty-cells:show; }
+#tb2 td { empty-cells:hide; }

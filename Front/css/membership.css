@@ -1,0 +1,110 @@
+body {
+    /* background-color = 배경색*/
+    /* background-color: #0094ff; */
+
+    /* background-repeat = 이미지 반복*/
+    background-color: whitesmoke;
+}
+.container {
+	width: 820px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+.navi a:hover {
+    color:#FC0;
+}
+
+header, section, footer, aside, article, figure {
+	display: block;
+}
+
+.sidebar {
+	float: right;
+	width: 200px;
+	height: 100%;
+	background-color:#gray;
+	padding-top:20px;
+	padding-left:10px;
+	padding-right:10px;
+}
+
+.content {
+	padding-top:5px;
+	padding-left:10px;
+	width: 520px;
+	float: left;
+}
+
+fieldset{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+h2{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    background-color: white;
+    text-align: center;
+}
+#info{
+    background-color: rgb(163, 162, 162);
+    text-align: center;
+    height:30px;
+    width: 200px;
+}
+
+.user_input {
+    height:20px;
+    width: 300px;
+}
+
+.user_input2 {
+    height:20px;
+    width: 278px;
+}
+.user_input3 {
+    height:60px;
+    width: 278px;
+}
+.user_input4 {
+    height:120px;
+    width: 300px;
+}
+.user_input5 {
+    height:20px;
+    width: 302px;
+}
+.user_input6 {
+    height:20px;
+    width: 305px;
+}
+.box1 {
+    width:100px;
+    height:70px;
+    background:gray;
+    margin-left:10px;
+
+}
+.box2 {
+    width:100px;
+    height:70px;
+    background:rgb(168, 167, 167);
+    margin-right:100px;
+}
+.table2{
+    margin-left: 110px;
+}
+.table3{
+    width: 500px;
+    margin-left: 250px;
+    margin-right: auto;
+}
+.img_style{
+    margin-left: 170px;
+    margin-right: auto;
+}

@@ -1,0 +1,20 @@
+/* .multi {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-width: 200px;
+} */
+
+.multi {
+    column-count: 4;
+    column-rule: 2px dotted #000;
+    text-align: justify;
+}
+.multi h3 {
+    break-before: column;
+}
+/* break-after = 내용기준 */
+/* break-before = 소제목 기준 */
+
+.no_col{
+    column-span: all;
+}

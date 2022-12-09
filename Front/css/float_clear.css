@@ -1,0 +1,17 @@
+div{
+    height: 100px;
+    margin-right: 10px;
+    border: 1px black solid;
+    text-align: center;
+    padding: 20px;
+}
+/* 
+.box1 { float:left; background-color: aqua;}
+.box2 { float:left; background-color:blueviolet;}
+.box3 { float:left; background-color:darkgreen;}
+.box4 { float:right; background-color:gold} */
+
+.box1 { float:left; background-color: aqua;width: 200px;}
+.box2 { float:left; background-color:blueviolet;width: 200px;}
+.box3 { background-color:darkgreen; }
+.box4 { clear:both; background-color:gold;}

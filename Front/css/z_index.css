@@ -1,0 +1,32 @@
+#wrap {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border: 1px black solid;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    font-size: 30px;
+    opacity: 0.7;
+    text-align: center;
+}
+
+#crd1 { 
+    top:50px;
+    left: 50px;
+    background-color: red;
+    z-index:3; }
+
+#crd2 { 
+    top:100px;
+    left: 130px;
+    background-color: blue;
+    z-index:1; }
+
+#crd3 { 
+    bottom:60px;
+    left: 60px;
+    background-color: greenyellow;
+    z-index:2; }
