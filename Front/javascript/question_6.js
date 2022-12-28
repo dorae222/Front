@@ -38,7 +38,8 @@ countTimer = function () {
         min--;
         sec = 59;
         }
-    if (min < 0){
+    if (min <= 0){
+        document.getElementById("pause_message").innerText = '2초 뒤 새로고침됩니다';
         setTimeout(function(){
             location.reload();
         },2000)
@@ -52,9 +53,8 @@ pause_button.onclick = function(){
 }
 //////////////////////////////////////////////////////////////////////////////
 reset_button.onclick = function resetTimer() { // 리셋 버튼 연결
-    clearTimer(timer, "리셋 종료");
     setTimeout(function(){
-        location.reload();
+        clearTimer(timer, "리셋 종료");
     },2000)
 }
 //////////////////////////////////////////////////////////////////////////////
