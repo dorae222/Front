@@ -26,5 +26,5 @@ function finding() {
   }
   else 
     alert("1과 100 사이의 숫자를 입력하세요.");
-}
+    }
 }

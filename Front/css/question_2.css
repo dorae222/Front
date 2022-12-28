@@ -1,0 +1,40 @@
+.wrapper {
+	width:600px;
+	margin:0 auto;
+	position:relative;
+	background-color:#ccc;
+	text-align:center;
+}
+#container {   
+	position:absolute;
+}
+#container > img {
+	width:600px;
+	float:left;
+}
+button {
+	position:absolute;
+	height:100%;
+	top:0;
+	border:none;
+	padding:20px;
+	color:#000;
+	font-weight:800;
+	font-size:24px;
+	opacity:0.4;   
+}
+#prev {
+	left:0;
+}
+#next {
+	right:0;
+}
+button:hover {
+	background-color:#222;
+	color:#fff;
+	opacity:0.6;
+	cursor:pointer;
+}
+button:focus {
+	outline:0;
+}
