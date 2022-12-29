@@ -1,0 +1,166 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 예매 페이지</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Movie</h1>
+        <nav>
+          <span>Home</span>
+          <span>About</span>
+          <span>Event</span>
+        </nav>
+    </header>
+    
+    <div id="container">
+        <p class="text1">
+            ★★★
+        </p>
+        <div class="box-wrap">
+            <div class="box">
+                <div class="img">
+                    <div id="container">
+                        <img alt="Hover Effect"
+                            onclick="javascript:location.href='https://namu.wiki/w/%EC%95%84%EB%B0%94%ED%83%80:%20%EB%AC%BC%EC%9D%98%20%EA%B8%B8';"
+                            src="../pictures/question_2_1.jpg">
+                        <img alt="Hover Effect"
+                            onclick="javascript:location.href='https://namu.wiki/w/%EC%98%81%EC%9B%85(2022)';"
+                            src="../pictures/question_2_2.jpg">
+                        <img alt="Hover Effect"
+                            onclick="javascript:location.href='https://namu.wiki/w/%EC%A0%A0%ED%8B%80%EB%A7%A8(2022)';"
+                            src="../pictures/question_2_3.jpg">
+                        <img alt="Hover Effect"
+                            onclick="javascript:location.href='https://namu.wiki/w/%EC%98%AC%EB%B9%BC%EB%AF%B8(%EC%98%81%ED%99%94)';"
+                            src="../pictures/question_2_4.jpg">
+                        <button id="prev">&lang;</button>
+                        <button id="next">&rang;</button>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3>영화정보가 궁금하다면?</h3>
+                    <p>이미지를 클릭해주세요.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="movieContainer">
+            <label for="age_group">
+                Group:
+            </label>
+            <select name="pickAge" id="age_group">
+                <option class="group">성인</option>
+                <option class="group">학생</option>
+                <option class="group">아동</option>
+                <option class="group">그외</option>
+            </select>
+            <label for="movie">
+                Movie:
+                <select name="pickMovie" id="movie">
+                    <option class="price" value="16000">아바타2 (16000원)</option>
+                    <option class="price" value="12000">영웅 (12000원)</option>
+                    <option class="price" value="12000">젠틀맨 (12000원)</option>
+                    <option class="price" value="14000">올빼미 (14000원)</option>
+                </select>
+        </div>
+
+        <ul class="showcase">
+            <li>
+                <div class="availableSeat"></div>
+                <small class="small">선택가능좌석</small>
+            </li>
+            <li>
+                <div class="selectedSeatIcon"></div>
+                <small class="small">선택하신좌석</small>
+            </li>
+            <li>
+                <div class="occupiedSeat"></div>
+                <small class="small">선택불가좌석</small>
+            </li>
+        </ul>
+
+        <div class="seatContainer">
+            <div class="screen"></div>
+            <div class="row">
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+            </div>
+
+            <div class="row">
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="occupiedSeat"></span>
+                <span class="occupiedSeat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+            </div>
+
+            <div class="row">
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="occupiedSeat"></span>
+                <span class="seat"></span>
+            </div>
+
+            <div class="row">
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="occupiedSeat"></span>
+                <span class="occupiedSeat"></span>
+            </div>
+
+            <div class="row">
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+            </div>
+
+            <div class="row">
+                <span class="seat"></span>
+                <span class="occupiedSeat"></span>
+                <span class="occupiedSeat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="occupiedSeat"></span>
+                <span class="seat"></span>
+            </div>
+
+        </div>
+
+        <p class="text2">
+            총 <span id="count">0</span>자리 고르셨습니다.<br>
+            가격은 <span id="costs">0</span>원입니다.
+        </p>
+
+    </div>
+</body>
+
+</html>

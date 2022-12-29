@@ -1,0 +1,275 @@
+body{
+  font-family: 'Lato', sans-serif;
+  background-color: rgba(99, 95, 95, 0.243);
+  color: rgb(0, 0, 0);
+  box-sizing: border-box;
+}
+header {  
+  height: 75px;
+  padding: 1rem;
+  color: white;
+  background: rgb(8, 8, 8);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper {
+	width:400px;
+	margin:0 auto;
+	position:relative;
+	background-color:rgb(11, 12, 63);
+	text-align:center;
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+  justify-content: relative;
+  align-items: center;
+  height: 300px;
+}
+
+#container > img {
+	width:300px;
+  height: 300px;
+	float:left;
+}
+
+button {
+	position:absolute;
+	height:100%;
+	top:0;
+	border:none;
+	padding:20px;
+  background-color:rgb(58, 57, 60);
+	color:rgb(255, 255, 255);
+	font-weight:800;
+	font-size:24px;
+	opacity:0.4;   
+}
+
+#prev {
+	left:0;
+}
+#next {
+	right:0;
+}
+button:hover {
+	background-color:#222;
+	color:#fff;
+	opacity:0.6;
+	cursor:pointer;
+}
+button:focus {
+	outline:0;
+}
+
+.movieContainer{
+  margin: 20px 0px;
+}
+
+.showcase{
+  background-color: #777;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+  padding: 5px 10px;
+}
+
+.movieContainer select{
+  background-color: #777;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 5px 15px 5px 15px;
+  border-radius: 7px;
+  appearance: none;
+  border: 0;
+}
+
+.movieContainer select option{
+
+ text-align: left;
+}
+.seatContainer{
+  background-color: #777;
+  background: rgba(0, 0, 0, 0.1);
+}
+li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.small{
+  color: #777;
+  margin-left: 2px;
+}
+
+.showcase .seat:hover{
+  cursor: default;
+  scale: 1;
+}
+
+.showcase .selectedSeat:hover{
+  cursor: default;
+  scale: 1;
+}
+
+.screen{
+ background-color: #fff;
+ margin: 25px;
+ padding: 5px;
+ width: 140px;
+ height: 80px;
+ transform: rotateX(-45deg);
+ box-shadow: 0 3px 10px rgb(255 255 255 / 70%);
+}
+
+.seat{
+  background-color: #444451;
+  width: 15px;
+  height: 12px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+}
+
+.availableSeat{
+  background-color: #444451;
+  width: 15px;
+  height: 12px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: default;
+}
+
+.selectedSeatIcon{
+  background-color: #6feaf6;
+  width: 15px;
+  height: 12px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: default;
+}
+
+.seat:hover{
+  scale: 1.2;
+}
+
+.selectedSeat:hover{
+  scale: 1.2;
+}
+
+.seat:nth-of-type(2){
+  margin-right: 18px;
+}
+
+.seat:nth-of-type(7){
+  margin-left: 18px;
+}
+
+.occupiedSeat:nth-of-type(2){
+  margin-right: 18px;
+}
+.occupiedSeat:nth-of-type(7){
+  margin-left: 18px;
+}
+
+.selectedSeat{
+  background-color: #6feaf6;
+  width: 15px;
+  height: 12px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  cursor: pointer;
+}
+
+.occupiedSeat{
+  background-color: #fff;
+  width: 15px;
+  height: 12px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.row{
+  display: flex;
+}
+
+.text1{
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+.text2{
+  background-color: #777;
+  background: rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+#count{
+  color: #6feaf6;
+}
+
+#costs{
+  color: #6feaf6;
+}
+
+@font-face { font-family: 'BMJUA'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff'); font-weight: normal; font-style: normal; }
+* {padding: 0; margin: 0;}
+
+.box-wrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.box {
+  position: relative;
+  width: 400px; height: 300px;
+}
+.box img {
+  width: 100%;
+}
+
+.box .info {
+  color: #fff;
+  position: absolute; left: 0; bottom: 0;
+  background: rgba(76, 74, 74, 0.5);
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.35s ease-in-out;
+}
+.box:hover .info {
+  opacity: 1;
+}
+.box .info h3 {
+  font-size: 12px;
+  padding-bottom: 0.4em;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.box .info p {
+  font-size: 3px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
