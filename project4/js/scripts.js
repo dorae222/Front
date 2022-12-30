@@ -1,27 +1,29 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    const seatContainer = document.querySelector('.seatContainer');
+    const seatContainer = document.querySelector('.seatContainer'); //좌석 관련 태그
 
     const movie = document.getElementById('movie'); // 선택할 영화
-    let moviePrice = Number(movie.value); // 영화과격 
+    let moviePrice = Number(movie.value); // 영화가격 
 
     let count = document.querySelector('#count'); // 인원수
     let costs = document.querySelector('#costs'); // 가격
 
-    let curPos = 0;
+    let curPos = 0; // 이미지 순서
     const slides = document.querySelectorAll("#container > img");
-    const prevBtn = document.querySelector("#prev")
-    const nextBtn = document.querySelector("#next")
-    const images = document.querySelector("#container")
+    const images = document.querySelector("#container"); // 이미지 관련 태그
+    const prevBtn = document.querySelector("#prev"); // 버튼 prev 관련 태그
+    const nextBtn = document.querySelector("#next"); // 버튼 next 관련 태그
+    
 
+    // 이미지 분리 기능
     function showSlide(n) {
         for (let i = 0; i < slides.length; i++) {
             slides[i].style.display = "none"; 
         }
         slides[n].style.display = "block";
     }
-
+    // 이전 이미지로 슬라이드
     function prev() {
         if (curPos > 0){
             curPos -= 1;
@@ -31,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         showSlide(curPos);
     }
-
+    // 다음 이미지로 슬라이드
     function next() {
         if (curPos < slides.length - 1) {
             curPos += 1;
@@ -41,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         showSlide(curPos);
     }
-
+    // 버튼 실행 함수
     function init(){
         showSlide(curPos);
         prevBtn.addEventListener("click", prev);
@@ -61,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    //좌석 클릭했을때
+    // 
 
     seatContainer.addEventListener('click', (e) => {
 
@@ -74,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         countSeatPrice();
     })
 
-    // 영화 변경할때
+    //
 
     movie.addEventListener('change', (e) => {
 

@@ -10,15 +10,20 @@
 </head>
 
 <body>
+    <!-- 
+        Header - 최상단 메뉴 바
+    -->
     <header>
         <h1>Movie</h1>
         <nav>
-          <span>Home</span>
-          <span>About</span>
-          <span>Event</span>
+            <span>Home</span>
+            <span>About</span>
+            <span>Event</span>
         </nav>
     </header>
-    
+    <!-- 
+        이미지 슬라이드
+    -->
     <div id="container">
         <p class="text1">
             ★★★
@@ -49,7 +54,9 @@
                 </div>
             </div>
         </div>
-
+        <!-- 
+        영화 선택 및 본인 선택
+        -->
         <div class="movieContainer">
             <label for="age_group">
                 Group:
@@ -69,7 +76,9 @@
                     <option class="price" value="14000">올빼미 (14000원)</option>
                 </select>
         </div>
-
+        <!-- 
+        좌석 종류 소개
+        -->
         <ul class="showcase">
             <li>
                 <div class="availableSeat"></div>
@@ -84,7 +93,9 @@
                 <small class="small">선택불가좌석</small>
             </li>
         </ul>
-
+        <!-- 
+        좌석 구현
+        -->
         <div class="seatContainer">
             <div class="screen"></div>
             <div class="row">
@@ -154,12 +165,13 @@
             </div>
 
         </div>
-
+        <!-- 
+        자리 선택 및 금액 정보
+        -->
         <p class="text2">
             총 <span id="count">0</span>자리 고르셨습니다.<br>
             가격은 <span id="costs">0</span>원입니다.
         </p>
-
     </div>
 </body>
 
