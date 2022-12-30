@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     init();
     
-    // 선택한 좌석수 텍스트 변경해주기
+    // 좌석 선택에 따른 최종 정보 값 변경
 
     function countSeatPrice() {
         const selectedSeatCount = document.querySelectorAll('.selectedSeat').length;
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // 
+    // 좌석 클릭시 값 변경
 
     seatContainer.addEventListener('click', (e) => {
 
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         countSeatPrice();
     })
 
-    //
+    // 영화 클릭시 값 변경
 
     movie.addEventListener('change', (e) => {
 
@@ -85,8 +85,4 @@ document.addEventListener('DOMContentLoaded', () => {
         countSeatPrice()
 
     })
-
-
-
-
 })
